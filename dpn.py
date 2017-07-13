@@ -34,7 +34,6 @@ class DualPathBlock(nn.Module):
     def __init__(self, in_chs, num_1x1_a, num_3x3_b, num_1x1_c, inc, G, _type='normal'):
         super(DualPathBlock, self).__init__()
         self.num_1x1_c = num_1x1_c
-        self.in_chs = in_chs
 
         if _type is 'proj':
             key_stride = 1
@@ -72,9 +71,7 @@ class DualPathBlock(nn.Module):
             data_o1 = x[0]
             data_o2 = x[1]
 
-        out = self.layers.c1x1_a(data_in)
-        out = self.layers.c3x3_b(out)
-        out = self.layers.c1x1_c(out)
+        out = self.layers(data_in)
 
         summ = data_o1 + out[:,:self.num_1x1_c,:,:]
         dense = torch.cat([data_o2, out[:,self.num_1x1_c:,:,:]], dim=1)
