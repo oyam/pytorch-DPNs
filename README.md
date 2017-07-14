@@ -8,4 +8,4 @@ Pytorch Imprementation of Dual Path Networks modified from [https://github.com/p
 <img src='imgs/original-results-on-imagenet1k.png' width="700px"/>
 
 ## Acknowledgement
-A part of the code has been borrowed from [cypw/DPNs](https://github.com/cypw/DPNs)
+A part of the code is based on implementation of [cypw/DPNs](https://github.com/cypw/DPNs)
