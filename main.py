@@ -29,9 +29,6 @@ parser.add_argument('--arch', '-a', metavar='ARCH', default='resnet18',
                     help='model architecture: ' +
                         ' | '.join(model_names) +
                         ' (default: resnet18)')
-parser.add_argument('-g', '--groups', default=8, type=int, metavar='N',
-                    choices=[1,2,3,4,8],
-                    help='number of groups of ShuffleNet (default: 8)')
 parser.add_argument('-j', '--workers', default=4, type=int, metavar='N',
                     help='number of data loading workers (default: 4)')
 parser.add_argument('--epochs', default=90, type=int, metavar='N',
