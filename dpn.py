@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from collections import OrderedDict
 
-__all__ = ['DPN', 'dpn92', 'dpn98', 'dpn107', 'dpn131', 'dpns']
+__all__ = ['DPN', 'dpn92', 'dpn98', 'dpn131', 'dpn107', 'dpns']
 
 
 def dpn92(num_classes=1000):
@@ -14,12 +14,12 @@ def dpn98(num_classes=1000):
     return DPN(num_init_features=96, k_R=160, G=40, k_sec=(3,6,20,3), inc_sec=(16,32,32,128), num_classes=num_classes)
 
 
-def dpn107(num_classes=1000):
-    return DPN(num_init_features=128, k_R=200, G=50, k_sec=(4,8,20,3), inc_sec=(20,64,64,128), num_classes=num_classes)
-
-
 def dpn131(num_classes=1000):
     return DPN(num_init_features=128, k_R=160, G=40, k_sec=(4,8,28,3), inc_sec=(16,32,32,128), num_classes=num_classes)
+
+
+def dpn107(num_classes=1000):
+    return DPN(num_init_features=128, k_R=200, G=50, k_sec=(4,8,20,3), inc_sec=(20,64,64,128), num_classes=num_classes)
 
 
 dpns = {
