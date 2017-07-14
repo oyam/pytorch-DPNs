@@ -4,6 +4,7 @@ Pytorch Imprementation of Dual Path Networks modified from [https://github.com/p
 ![overview](imgs/overview.png)
 
 ## Original results on ImageNet-1k
+
 <img src='imgs/original-results-on-imagenet1k.png' width="700px"/>
 
 ## Acknowledgement
