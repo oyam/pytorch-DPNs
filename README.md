@@ -10,7 +10,7 @@ Pytorch Imprementation of Dual Path Networks modified from [https://github.com/p
 ## Acknowledgement
 A part of the code is based on implementation of [cypw/DPNs](https://github.com/cypw/DPNs)
 
-## Other Implementation
+## Other Implementations
 0. [MXNet Implementation](https://github.com/cypw/DPNs) by cypw  
 1. My [Chainer Implementation](https://github.com/oyam/chainer-DPNs)
 2. [Keras Implementation](https://github.com/titu1994/Keras-DualPathNetworks) by titu1994
